@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:timely/features/Home.dart';
 import 'package:timely/features/authentication/login.dart';
+import 'package:timely/features/authentication/on_boarding.dart';
 import 'package:timely/my_app.dart';
 
 class AuthenticationRepository extends GetxController{
@@ -22,12 +23,12 @@ class AuthenticationRepository extends GetxController{
     final user = FirebaseAuth.instance.currentUser;
 
     if (user != null) {
-      Get.offAll(const HomeScreen());
+      Get.offAll(() => const HomeScreen());
     } else {
       // Local storage
       GetStorage().writeIfNull('IsFirstTime', true);
       // Check if it's the user's first time
-      GetStorage().read('IsFirstTime') != true ? Get.offAll(const LoginScreen()) : Get.offAll(const MyApp());
+      GetStorage().read('IsFirstTime') != true ? Get.offAll(() => const LoginScreen()) : Get.offAll( () => const OnBoardingScreen());
     }
   }
 
@@ -69,7 +70,7 @@ class AuthenticationRepository extends GetxController{
   Future<void> logout() async {
     try {
       await FirebaseAuth.instance.signOut();
-      Get.offAll(const LoginScreen());
+      Get.offAll(() => const LoginScreen());
     } on FirebaseAuthException catch (e) {
       throw 'FirebaseAuthException: $e';
     } on FirebaseException catch (e) {
