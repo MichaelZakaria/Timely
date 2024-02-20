@@ -1,0 +1,9 @@
+flutter_native_splash:
+  background_image: assets/background.png
+  branding: assets/Timely2.png
+
+  android_12:
+    background_image: assets/background.png
+    branding: assets/Timely2.png
+
+  web: false
