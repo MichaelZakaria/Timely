@@ -38,7 +38,7 @@ class SignUpController extends GetxController{
       MySnackBars.successSnackBar(title: 'Congratulations', message: 'Your account has been created');
 
       // Move to login screen
-      Get.offAll(const LoginScreen());
+      Get.offAll(() => const LoginScreen());
 
     } catch (e) {
       // Stop the loader
