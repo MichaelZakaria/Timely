@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:timely/common/loading/MyLoader.dart';
 import 'package:timely/common/snack_bars/my_snack_bars.dart';
 import 'package:timely/data/repositories/authentication_repository.dart';
-import 'package:timely/features/authentication/login.dart';
+import 'package:timely/features/authentication/views/login.dart';
 
 class SignUpController extends GetxController{
   static SignUpController get instance => Get.find();

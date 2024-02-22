@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:timely/common/background/my_background.dart';
 import 'package:timely/features/authentication/controllers/sign_up_controller.dart';
-import 'package:timely/features/authentication/login.dart';
+import 'package:timely/features/authentication/views/login.dart';
 import 'package:timely/utilities/MyValidators.dart';
 
 class SignUpScreen extends StatelessWidget {

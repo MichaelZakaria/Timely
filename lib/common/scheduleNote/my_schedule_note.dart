@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:timely/features/controllers/my_schedule_note_controller.dart';
+import 'package:timely/features/home/controllers/my_schedule_note_controller.dart';
 
 class MyScheduleNote extends StatelessWidget {
   const MyScheduleNote({

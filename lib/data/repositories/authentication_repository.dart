@@ -3,10 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:timely/features/Home.dart';
-import 'package:timely/features/authentication/login.dart';
-import 'package:timely/features/authentication/on_boarding.dart';
-import 'package:timely/my_app.dart';
+import 'package:timely/features/authentication/views/login.dart';
+import 'package:timely/features/authentication/views/on_boarding.dart';
+import 'package:timely/features/home/views/schedule/schedule.dart';
 
 class AuthenticationRepository extends GetxController{
   static AuthenticationRepository get instance => Get.find();

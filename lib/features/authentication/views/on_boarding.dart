@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:timely/common/background/my_background.dart';
-import 'package:timely/features/authentication/login.dart';
+import 'package:timely/features/authentication/views/login.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({

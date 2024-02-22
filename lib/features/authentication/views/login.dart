@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:timely/common/background/my_background.dart';
 import 'package:timely/features/authentication/controllers/login_controller.dart';
-import 'package:timely/features/authentication/sign_up.dart';
+import 'package:timely/features/authentication/views/sign_up.dart';
 import 'package:timely/utilities/MyValidators.dart';
 
 class LoginScreen extends StatelessWidget {
