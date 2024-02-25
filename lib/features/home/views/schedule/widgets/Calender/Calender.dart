@@ -13,6 +13,9 @@ class MyCalender extends StatelessWidget {
       width: double.infinity,
       child: Center(
         child: TableCalendar(
+          // To scroll the page vertically
+          availableGestures: AvailableGestures.horizontalSwipe,
+
           // Header style
           headerStyle: const HeaderStyle(
             formatButtonVisible: false,

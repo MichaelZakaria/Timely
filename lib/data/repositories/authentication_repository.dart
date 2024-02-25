@@ -22,7 +22,7 @@ class AuthenticationRepository extends GetxController{
     final user = FirebaseAuth.instance.currentUser;
 
     if (user != null) {
-      Get.offAll(() => const HomeScreen());
+      Get.offAll(() => const ScheduleScreen());
     } else {
       // Local storage
       GetStorage().writeIfNull('IsFirstTime', true);

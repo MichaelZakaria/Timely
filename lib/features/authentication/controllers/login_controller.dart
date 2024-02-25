@@ -36,7 +36,7 @@ class LoginController extends GetxController {
       MySnackBars.successSnackBar(title: 'Welcome back', message: 'Your schedule awaits');
 
       // Go to Home Screen
-      Get.offAll(() => const HomeScreen());
+      Get.offAll(() => const ScheduleScreen());
 
 
     } catch (e) {
