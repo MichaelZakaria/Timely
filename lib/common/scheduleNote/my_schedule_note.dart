@@ -14,7 +14,7 @@ class MyScheduleNote extends StatelessWidget {
     final controller = ScheduleNoteController.instance;
 
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 20),
+      margin: const EdgeInsets.symmetric(horizontal: 25),
       height: 50,
       width: double.infinity,
       decoration: BoxDecoration(

@@ -15,6 +15,7 @@ class MyBackGround extends StatelessWidget {
       child: Container(
         color: Colors.black,
         child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
           decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
@@ -28,7 +29,7 @@ class MyBackGround extends StatelessWidget {
             )
           ),
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(10, 30, 10, 10),
+              padding: const EdgeInsets.fromLTRB(10, 30, 10, 0),
               child: child,
             )
         ),

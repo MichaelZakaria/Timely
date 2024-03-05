@@ -16,24 +16,18 @@ class NoteScreen extends StatelessWidget {
     
 
     return Scaffold(
-      body: MyBackGround(
+      body: const MyBackGround(
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const MyAppBar(),
-              const MyScheduleNote(),
-              const SizedBox(height: 20,),
-              const MySearchBar(),
-              const SizedBox(height: 20,),
-              const NotesVisible(),
-
-              const SizedBox(height: 20,),
-              const Text('Home'),
-              const SizedBox(height: 20,),
-              TextButton(
-                  onPressed: () => AuthenticationRepository.instance.logout(),
-                  child: const Text('Log out', style: TextStyle(color: Colors.red),)
-              ),
+              MyAppBar(),
+              SizedBox(height: 25,),
+              MyScheduleNote(),
+              SizedBox(height: 20,),
+              MySearchBar(),
+              SizedBox(height: 20,),
+              NotesVisible(),
+              SizedBox(height: 20,),
             ],
           )
         ),

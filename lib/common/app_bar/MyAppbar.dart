@@ -7,17 +7,26 @@ class MyAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 25),
-      child: AppBar(
-        backgroundColor: Colors.transparent,
-        automaticallyImplyLeading: false,
-        title: const Text('Timely', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),),
-        actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications, color: Colors.white,)),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert, color: Colors.white,))
+    return AppBar(
+      titleSpacing: 0,
+      backgroundColor: Colors.transparent,
+      automaticallyImplyLeading: false,
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          const Text('Timely', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              IconButton(onPressed: () {}, icon: const Icon(Icons.notifications, color: Colors.white,)),
+              IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert, color: Colors.white,))
+            ],
+          )
         ],
-      ),
+      )
+
+
+
     );
   }
 }

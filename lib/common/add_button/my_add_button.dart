@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:timely/features/add_new/views/new_note/add_new_note.dart';
+import 'package:timely/features/add_new/views/new_schedule/add_new_schedule.dart';
 
 class MyAddButton {
 
@@ -44,7 +46,7 @@ class MyAddButton {
                                       mini: true,
                                       backgroundColor: const Color(0xFF7E64FF),
                                       shape: const CircleBorder(),
-                                      onPressed: () {},
+                                      onPressed: () => Get.off(const AddNewNote()),
                                       child: const Icon(Icons.sticky_note_2_outlined, size: 25, color: Colors.white,),
                                     ),
                                     const SizedBox(height: 8),
@@ -52,7 +54,7 @@ class MyAddButton {
                                       mini: true,
                                       backgroundColor: const Color(0xFF7E64FF),
                                       shape: const CircleBorder(),
-                                      onPressed: () {},
+                                      onPressed: () => Get.off(const AddNewSchedule()),
                                       child: const Icon(Icons.event_note_rounded, size: 25, color: Colors.white,),
                                     ),
                                   ],

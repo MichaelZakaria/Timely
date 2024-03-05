@@ -17,7 +17,6 @@ class MyNoteReminderBar extends StatelessWidget {
       onTap: () {},
       child: Container(
         padding: const EdgeInsets.all(15),
-        margin: const EdgeInsets.symmetric(horizontal: 20),
         width: double.infinity,
         decoration: BoxDecoration(
             color: const Color(0xFF7E64FF).withOpacity(0.8),

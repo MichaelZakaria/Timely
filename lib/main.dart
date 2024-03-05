@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import 'data/repositories/authentication_repository.dart';
 import 'firebase_options.dart';
 import 'my_app.dart';
@@ -18,6 +19,9 @@ void main() async{
 
   /// await native splash until other items load
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+
+  /// initialize Data Formatting
+  initializeDateFormatting();
 
   /// Initialize Firebase
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform).then(

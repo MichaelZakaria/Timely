@@ -38,7 +38,6 @@ class MySearchBar extends StatelessWidget {
 
     return Container(
       height: 40,
-      margin: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(25),
         color: const Color(0xFFCCC2FE)
@@ -61,8 +60,6 @@ class MySearchBar extends StatelessWidget {
         ),
       ),
     );
-
-
 
     /// Using SearchDelegate
     // return Container(

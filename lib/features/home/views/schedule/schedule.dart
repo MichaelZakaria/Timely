@@ -18,6 +18,7 @@ class ScheduleScreen extends StatelessWidget {
           child: Column(
             children: [
               MyAppBar(),
+              SizedBox(height: 25,),
               MyScheduleNote(),
               SizedBox(height: 20,),
               MyCalender(),
@@ -25,6 +26,7 @@ class ScheduleScreen extends StatelessWidget {
               MyHeader(),
               SizedBox(height: 20,),
               MyCompleteSchedule(),
+              SizedBox(height: 20,),
             ],
           ),
         ),

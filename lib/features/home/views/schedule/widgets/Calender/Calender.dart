@@ -8,8 +8,7 @@ class MyCalender extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 20),
+    return SizedBox(
       width: double.infinity,
       child: Center(
         child: TableCalendar(
