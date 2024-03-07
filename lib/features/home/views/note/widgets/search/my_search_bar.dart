@@ -48,15 +48,14 @@ class MySearchBar extends StatelessWidget {
 
         expands: false,
         style: const TextStyle(color: Colors.black),
-        textAlignVertical: TextAlignVertical.bottom,
-        selectionControls: EmptyTextSelectionControls(),
 
 
         decoration: InputDecoration(
           hintStyle: TextStyle(color: Colors.black.withOpacity(0.4)),
           prefixIcon: const Icon(Icons.search),
           hintText: 'Search Note',
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(24))
+          border: OutlineInputBorder(borderRadius: BorderRadius.circular(24)),
+          contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:timely/data/repositories/authentication_repository.dart';
+import 'package:timely/features/add_new/views/new_note/widgets/new_note_app_bar.dart';
+import 'package:timely/features/add_new/views/new_note/widgets/new_note_text_field.dart';
 
 class AddNewNote extends StatelessWidget {
   const AddNewNote({super.key});
@@ -7,18 +8,26 @@ class AddNewNote extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const SizedBox(height: 20,),
-          const Text('Home'),
-          const SizedBox(height: 20,),
-          TextButton(
-              onPressed: () => AuthenticationRepository.instance.logout(),
-              child: const Text('Log out', style: TextStyle(color: Colors.red),)
+      backgroundColor: const Color(0xFF7E64FF),
+      body: SingleChildScrollView(
+        child: Container(
+          padding: const EdgeInsets.fromLTRB(18, 30, 18, 0),
+          child: const Column(
+            children: [
+              NewNoteAppBar(),
+              SizedBox(height: 20,),
+
+              // Title text field
+              NewNoteTextField(hint: 'Title', font: FontWeight.bold, size: 24),
+
+              // Your Text text field
+              NewNoteTextField(hint: 'Your text',),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
 }
+
+

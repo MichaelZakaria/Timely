@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:timely/features/settings/views/settings.dart';
 
 class MyAppBar extends StatelessWidget {
   const MyAppBar({
@@ -19,7 +21,10 @@ class MyAppBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               IconButton(onPressed: () {}, icon: const Icon(Icons.notifications, color: Colors.white,)),
-              IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert, color: Colors.white,))
+              IconButton(
+                  onPressed: () => Get.to(() => const Settings()),
+                  icon: const Icon(Icons.more_vert, color: Colors.white,)
+              )
             ],
           )
         ],
