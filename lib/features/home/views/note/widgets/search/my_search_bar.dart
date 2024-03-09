@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:timely/features/home/controllers/note_list_controller.dart';
 import 'package:timely/features/home/models/note_model.dart';
 import 'package:timely/temp_data/notes.dart';
@@ -42,20 +43,27 @@ class MySearchBar extends StatelessWidget {
         borderRadius: BorderRadius.circular(25),
         color: const Color(0xFFCCC2FE)
       ),
-      child: TextField(
+      child: Obx(
+          () => TextField(
 
-        onChanged: (value) =>  search(value),
+          controller: TextEditingController(text: controller.searchTerm.value),
 
-        expands: false,
-        style: const TextStyle(color: Colors.black),
+          onChanged: (value) {
+            controller.searchTerm.value = value;
+            search(value);
+          },
+
+          expands: false,
+          style: const TextStyle(color: Colors.black),
 
 
-        decoration: InputDecoration(
-          hintStyle: TextStyle(color: Colors.black.withOpacity(0.4)),
-          prefixIcon: const Icon(Icons.search),
-          hintText: 'Search Note',
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(24)),
-          contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
+          decoration: InputDecoration(
+            hintStyle: TextStyle(color: Colors.black.withOpacity(0.4)),
+            prefixIcon: const Icon(Icons.search),
+            hintText: 'Search Note',
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(24)),
+            contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 0),
+          ),
         ),
       ),
     );

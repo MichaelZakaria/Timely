@@ -24,6 +24,7 @@ class MyTextInput extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
         ),
         child: TextField(
+            textCapitalization: TextCapitalization.sentences,
             keyboardType: TextInputType.multiline,
             maxLines: null,
             style: const TextStyle(color: Colors.black),

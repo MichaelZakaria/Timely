@@ -4,30 +4,30 @@ import 'package:timely/common/add_button/my_add_button.dart';
 import 'package:timely/common/app_bar/MyAppbar.dart';
 import 'package:timely/common/background/my_background.dart';
 import 'package:timely/common/scheduleNote/my_schedule_note.dart';
-import 'package:timely/data/repositories/authentication_repository.dart';
 import 'package:timely/features/home/views/note/widgets/note_reminder/notes_visible.dart';
 import 'package:timely/features/home/views/note/widgets/search/my_search_bar.dart';
+import 'package:timely/features/settings/views/settings.dart';
 
 class NoteScreen extends StatelessWidget {
   const NoteScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    
-
     return Scaffold(
-      body: const MyBackGround(
+      body: MyBackGround(
         child: SingleChildScrollView(
           child: Column(
             children: [
-              MyAppBar(),
-              SizedBox(height: 25,),
-              MyScheduleNote(),
-              SizedBox(height: 20,),
-              MySearchBar(),
-              SizedBox(height: 20,),
-              NotesVisible(),
-              SizedBox(height: 20,),
+              MyAppBar(back: false, title: 'Timely', icon_1: Icons.notifications, icon_2: Icons.more_vert,
+                  toDo_2: () => Get.to(const Settings())
+              ),
+              const SizedBox(height: 25,),
+              const MyScheduleNote(),
+              const SizedBox(height: 20,),
+              const MySearchBar(),
+              const SizedBox(height: 20,),
+              const NotesVisible(),
+              const SizedBox(height: 20,),
             ],
           )
         ),

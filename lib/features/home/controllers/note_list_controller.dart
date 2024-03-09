@@ -6,6 +6,7 @@ class NoteListController extends GetxController {
   static NoteListController get instance => Get.find();
 
   RxList<NoteModel> noteList = <NoteModel>[].obs;
+  Rx<String?> searchTerm= ''.obs;
 
   @override
   void onInit() {

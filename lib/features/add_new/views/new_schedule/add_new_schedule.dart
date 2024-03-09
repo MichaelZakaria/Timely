@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:timely/common/app_bar/MyAppbar.dart';
 import 'package:timely/common/background/my_background.dart';
 import 'package:timely/common/header/my_header.dart';
 import 'package:timely/common/text_input/my_text_input.dart';
+import 'package:timely/common/toggle_tile/my_toggle_tile.dart';
 import 'package:timely/features/add_new/controllers/new_schedule_controller.dart';
-import 'package:timely/features/add_new/views/new_schedule/widgets/is_full_day.dart';
 import 'package:timely/features/add_new/views/new_schedule/widgets/my_date.dart';
 import 'package:timely/features/add_new/views/new_schedule/widgets/my_reminder_dialog.dart';
 import 'package:timely/features/add_new/views/new_schedule/widgets/my_repeat_dialog.dart';
-import 'package:timely/features/add_new/views/new_schedule/widgets/new_schedule_app_bar.dart';
 
 class AddNewSchedule extends StatelessWidget {
   const AddNewSchedule({super.key});
@@ -23,15 +23,17 @@ class AddNewSchedule extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const NewScheduleAppBar(),
+              // Appbar
+              const MyAppBar(checkbox: true, icon_2: Icons.check),
               const SizedBox(height: 25,),
-              const MyHeader(),
+              // Header
+              const MyHeader(text: 'Schedule',),
               const SizedBox(height: 25,),
               // Title Text Field
               const MyTextInput(hintText: 'Title', height: 100,),
               const SizedBox(height: 15,),
               // Is full day toggle
-              const MyISFullDat(),
+              MyToggleTile(text: 'Full-day', toCheck: controller.isFullDay),
               const SizedBox(height: 15,),
               // Start from
               MyDate(text: 'Start from', date: controller.startDate, time: controller.startTime,),
