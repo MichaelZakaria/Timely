@@ -18,7 +18,7 @@ class MyDate extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(text, style: const TextStyle(color: Colors.white, fontSize: 16),),
+        Text(text, style: const TextStyle(color: Colors.white, fontSize: 18),),
         GestureDetector(
           onTap: () async {
             DateTime? theDate = await showDatePicker(

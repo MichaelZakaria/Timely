@@ -6,6 +6,7 @@ import 'package:timely/common/background/my_background.dart';
 import 'package:timely/common/scheduleNote/my_schedule_note.dart';
 import 'package:timely/features/home/views/note/widgets/note_reminder/notes_visible.dart';
 import 'package:timely/features/home/views/note/widgets/search/my_search_bar.dart';
+import 'package:timely/features/notifications/views/notifications/notifications.dart';
 import 'package:timely/features/settings/views/settings.dart';
 
 class NoteScreen extends StatelessWidget {
@@ -19,7 +20,7 @@ class NoteScreen extends StatelessWidget {
           child: Column(
             children: [
               MyAppBar(back: false, title: 'Timely', icon_1: Icons.notifications, icon_2: Icons.more_vert,
-                  toDo_2: () => Get.to(const Settings())
+                  toDo_2: () => Get.to(const Settings()) , toDo_1: () =>  Get.to(const Notifications()),
               ),
               const SizedBox(height: 25,),
               const MyScheduleNote(),
@@ -27,7 +28,7 @@ class NoteScreen extends StatelessWidget {
               const MySearchBar(),
               const SizedBox(height: 20,),
               const NotesVisible(),
-              const SizedBox(height: 20,),
+              const SizedBox(height: 25,),
             ],
           )
         ),

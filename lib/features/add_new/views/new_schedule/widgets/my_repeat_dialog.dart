@@ -13,14 +13,19 @@ class MyRepeatDialog extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        const Text('Repeat', style: TextStyle(color: Colors.white, fontSize: 16),),
+        const Text('Repeat', style: TextStyle(color: Colors.white, fontSize: 18),),
         GestureDetector(
           onTap: () async {
             showDialog(
               context: context,
               builder: (BuildContext context) {
                 return SimpleDialog(
-                  title: const Text('Repeat'),
+                  title: const Center(child: Text('Repeat', style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),)),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                      side:const BorderSide(width: 5, color: Colors.black26)
+                  ),
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 5, vertical: 8),
                   children: [
                     MyDialogOption(text: 'One Time', toChange: controller.repeat,),
                     const Divider(),

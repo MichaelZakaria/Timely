@@ -7,6 +7,7 @@ import 'package:timely/common/header/my_header.dart';
 import 'package:timely/common/scheduleNote/my_schedule_note.dart';
 import 'package:timely/features/home/views/schedule/widgets/Calender/Calender.dart';
 import 'package:timely/features/home/views/schedule/widgets/schedule_reminder/my_complete_schedule.dart';
+import 'package:timely/features/notifications/views/notifications/notifications.dart';
 import 'package:timely/features/settings/views/settings.dart';
 
 class ScheduleScreen extends StatelessWidget {
@@ -20,7 +21,7 @@ class ScheduleScreen extends StatelessWidget {
           child: Column(
             children: [
               MyAppBar(back: false, title: 'Timely', icon_1: Icons.notifications, icon_2: Icons.more_vert,
-                toDo_2: () => Get.to(const Settings()),
+                toDo_2: () => Get.to(const Settings()), toDo_1: () =>  Get.to(const Notifications()),
               ),
               const SizedBox(height: 25,),
               const MyScheduleNote(),

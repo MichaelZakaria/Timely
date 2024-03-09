@@ -27,13 +27,13 @@ class AddNewSchedule extends StatelessWidget {
               const MyAppBar(checkbox: true, icon_2: Icons.check),
               const SizedBox(height: 25,),
               // Header
-              const MyHeader(text: 'Schedule',),
+              const MyHeader(text: 'Schedule', size: 22),
               const SizedBox(height: 25,),
               // Title Text Field
               const MyTextInput(hintText: 'Title', height: 100,),
               const SizedBox(height: 15,),
               // Is full day toggle
-              MyToggleTile(text: 'Full-day', toCheck: controller.isFullDay),
+              MyToggleTile(text: 'Full-day', size: 18, toCheck: controller.isFullDay),
               const SizedBox(height: 15,),
               // Start from
               MyDate(text: 'Start from', date: controller.startDate, time: controller.startTime,),

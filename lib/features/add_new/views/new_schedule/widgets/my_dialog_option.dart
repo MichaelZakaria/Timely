@@ -17,7 +17,7 @@ class MyDialogOption extends StatelessWidget {
         toChange.value = text;
         Navigator.pop(context);
       },
-      child: Text(text, style: TextStyle(color: Colors.purple[900]!.withOpacity(0.8), fontSize: 15),),
+      child: Text(text, style: TextStyle(color: Colors.purple[900]!.withOpacity(0.8), fontSize: 16),),
     );
   }
 }
