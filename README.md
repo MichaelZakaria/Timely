@@ -9,12 +9,11 @@
 
 <br>
 
-<pre> - Add new event                                             Add a new note :<br> </pre> 
-<p align="center">
-  <img src="https://github.com/MichaelZakaria/Timely/assets/65913937/35320c9f-871f-4a2d-8677-ea592e8666ad" width="400" height="800"/>
-
- <img src="https://github.com/MichaelZakaria/Timely/assets/65913937/94d64790-61c6-454b-bfa4-006f7a24e206" width="400" height="800"/>
-</p>
+<pre> - Add new event                                             Add a new note :<br> 
+  <p align="center">
+    <img src="https://github.com/MichaelZakaria/Timely/assets/65913937/35320c9f-871f-4a2d-8677-ea592e8666ad" width="400" height="800"/> ;&emsp; <img src="https://github.com/MichaelZakaria/Timely/assets/65913937/94d64790-61c6-454b-bfa4-006f7a24e206" width="400" height="800"/>
+  </p>
+</pre> 
 
 <br>
 
