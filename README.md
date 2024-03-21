@@ -1,9 +1,9 @@
 # Timely
  
-- Shedule &nbsp;&nbsp;&nbsp;&nbsp; Notes :<br>
+- Shedule &emsp;&emsp;&emsp;&emsp; Notes :<br>
 <p align="center">
   <img src="https://github.com/MichaelZakaria/Timely/assets/65913937/634b15f2-8cd3-4f4b-bde0-8e8ca1b64587" width="400" height="800"/>
-
+  &emsp;
  <img src="https://github.com/MichaelZakaria/Timely/assets/65913937/c663bcfb-efa5-41ff-b743-d91d9e5638b8" width="400" height="800"/>
 </p>
 
