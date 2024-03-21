@@ -1,6 +1,6 @@
 # Timely
  
-- Shedule           /t                                           Notes :<br>
+- Shedule &nbsp;&nbsp;&nbsp;&nbsp; Notes :<br>
 <p align="center">
   <img src="https://github.com/MichaelZakaria/Timely/assets/65913937/634b15f2-8cd3-4f4b-bde0-8e8ca1b64587" width="400" height="800"/>
 
