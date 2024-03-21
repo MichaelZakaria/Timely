@@ -9,7 +9,7 @@
 
 <br>
 
-- Add new event                                             Add a new note :<br>
+<pre> - Add new event                                             Add a new note :<br>
 <p align="center">
   <img src="https://github.com/MichaelZakaria/Timely/assets/65913937/35320c9f-871f-4a2d-8677-ea592e8666ad" width="400" height="800"/>
 
